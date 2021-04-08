@@ -2,7 +2,7 @@
 %% This is file `imsproc.cls'
 %%
 %%   ______________________________________
-%%   Copyright � 2012�2013 Persian TeX Group
+%%   Copyright © 2012–2013 Persian TeX Group
 %%
 %%   License information appended.
 %%
@@ -460,9 +460,9 @@
 \def\enddoc@text{\ifx\@empty\@translators \else\@settranslators\fi
   \ifx\@empty\addresses \else\@setaddresses\fi}
 \AtEndDocument{\enddoc@text}
-\def\curraddrname{{\iranicfamily ?????}}
-\def\emailaddrname{{\iranicfamily ????????}}
-\def\urladdrname{{\iranicfamily ??????}}
+\def\curraddrname{{\iranicfamily نشانی}}
+\def\emailaddrname{{\iranicfamily رایانامه}}
+\def\urladdrname{{\iranicfamily تارنما}}
 \def\@setaddresses{\par
   \nobreak \begingroup
 \footnotesize
@@ -504,7 +504,7 @@
   }%
 }
 \let\@subjclass=\@empty
-\def\translname{?????}
+\def\translname{مترجم}
 \def\translator#1{%
   \ifx\@empty\@translators \def\@translators{#1}%
   \else\g@addto@macro\@translators{\and#1}\fi}
@@ -679,8 +679,8 @@
   \fi\fi
   \global\count\copyins=999 \relax
 }
-\newcommand{\abstractname}{?????}
-\newcommand{\keywordsname}{?????? ? ????? ?????}
+\newcommand{\abstractname}{چکیده}
+\newcommand{\keywordsname}{عبارات و کلمات کلیدی}
 \newcommand{\subjclassname}{%
   \textup{1991} Mathematics Subject Classification}
 \@xp\let\csname subjclassname@1991\endcsname \subjclassname
@@ -690,9 +690,9 @@
   \textup{2010} Mathematics Subject Classification}
 \def\@tempb{imsproc}
 \ifx\@classname\@tempb
-  \newcommand{\datename}{\textiranic{?????}:}
+  \newcommand{\datename}{\textiranic{تاریخ}:}
 \else
-  \newcommand{\datename}{?????????? ???? ????????}
+  \newcommand{\datename}{دریافت‌شده توسط دبیرخانه}
 \fi
 \def\@settitle{\begin{center}%
  \Large
@@ -1703,13 +1703,13 @@
 \newenvironment{pf*}[1]{\@newpf[#1]}{\popQED\endtrivlist}
 \endinput
 %%
-%% Copyright � 2012�2013  Persian TeX Group <persian-tex@tug.org>
+%% Copyright © 2012–2013  Persian TeX Group <persian-tex@tug.org>
 %%
 %% It may be distributed and/or modified under the LaTeX Project Public License,
 %% version 1.3c or higher (your choice). The latest version of
 %% this license is at: http://www.latex-project.org/lppl.txt
 %%
-%% This work is �maintained� (as per LPPL maintenance status)
+%% This work is “maintained” (as per LPPL maintenance status)
 %% by Persian TeX Group.
 %%
 %%
