@@ -3,7 +3,6 @@
 \usepackage{geometry}
 \usepackage{amsmath,amsthm,amssymb,graphicx,tikz,fancyhdr} 
 \usepackage{booktabs}
-\usepackage[colorlinks]{hyperref}
 \setcounter{page}{1}
 \newtheorem{de}{تعریف}[section]
 \newtheorem{exa}[de]{مثال}
@@ -12,7 +11,6 @@
 \geometry{left=2.5cm,right=2.5cm,top=3cm,bottom=3cm,headsep=1.2cm}
 \footskip 0.5cm
 \usepackage{booktabs}
-\usepackage{hyperref}
 \newcommand*{\publname}{%
 \begin{tabular}{c}
 \includegraphics[width=1.8cm]{UI-logo.pdf}\\
@@ -42,6 +40,7 @@
 \usepackage[para*]{manyfoot}
 \SetFootnoteHook{\setLTR}
 \DeclareNewFootnote[para]{A}
+\usepackage[colorlinks,citecolor=blue]{hyperref}
 \usepackage{xepersian}
 \makeatletter
 \let\c@footnoteA\c@footnote
